@@ -199,3 +199,13 @@ header img {
 .form-group {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  #book-list.flex-container{
+    flex-direction: column;
+  }
+
+  .boxed {
+    width: 90%;
+  }
+}
