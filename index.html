@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps | Dicoding Submission</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/illustrations/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="boxed">
+      <div class="flex-container flex-space-between">
+        <div class="flex-item flex-container">
+          <div class="">
+            <img src="./assets/illustrations/logo.svg" alt="Logo" />
+          </div>
+          <div class="brand">Bookshelf Apps</div>
+        </div>
+        <div class="flex-item text-right">
+          <img
+            src="./assets/illustrations/avatar.png"
+            alt="avatar"
+            class="mr-0"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <main>
+      <div class="boxed">
+        <!-- Toolbar -->
+        <div class="toolbaar mt-1 flex-container flex-space-between">
+          <div>
+            <button class="btn" type="button" id="btn-add-new">
+              Add New Book
+            </button>
+          </div>
+          <div class="toolbar-group">
+            <input
+              class="input-text mr-1"
+              id="search-query"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn" type="button" id="btn-search">
+              <img src="./assets/illustrations/search.png" alt="search" />
+            </button>
+          </div>
+        </div>
+        <!-- End Toolbar -->
+        <!-- Book Form -->
+        <div id="form-wrapper" class="hide">
+          <form action="#" id="form-book">
+            <h4>Form Book</h4>
+            <input type="hidden" id="book-id" />
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input
+                class="input-text"
+                required
+                type="text"
+                id="input-book-title"
+              />
+            </div>
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input
+                class="input-text"
+                required
+                type="text"
+                id="input-book-author"
+              />
+            </div>
+            <div class="form-group">
+              <label for="year">Year</label>
+              <input
+                class="input-text"
+                required
+                type="number"
+                id="input-book-year"
+              />
+            </div>
+            <div class="form-group">
+              <label for="isCompleted">Is Reading Completed</label>
+              <input
+                class="custom"
+                type="checkbox"
+                id="input-book-isComplete"
+              />
+            </div>
+            <div class="mt-1 text-right">
+              <button class="btn btn-delete" id="btn-discard" type="button">
+                Close
+              </button>
+              <button class="btn btn-save" type="submit">Save</button>
+            </div>
+          </form>
+        </div>
+        <!-- End Book Form -->
+        <!-- Book List -->
+        <div id="book-list" class="flex-container flex-space-between">
+          <div id="is-completed" class="flex-item mr-1">
+            <h4>
+              <img src="./assets/illustrations/time-left.png" alt="time-left" />
+              <span>Not Finished Reading</span>
+            </h4>
+            <div class="card card-404">
+              <img
+                src="./assets/illustrations/book.png"
+                alt="book-placeholder"
+              />
+              <span>No Book is found, please add a new book</span>
+            </div>
+          </div>
+          <div id="is-not-completed" class="flex-item ml-1">
+            <h4>
+              <img src="./assets/illustrations/checklist.png" alt="checklist" />
+              <span>Finished Reading</span>
+            </h4>
+            <div class="card card-404">
+              <img
+                src="./assets/illustrations/book.png"
+                alt="book-placeholder"
+              />
+              <span>No Book is found, please add a new book</span>
+            </div>
+          </div>
+        </div>
+        <!-- End Book List -->
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
