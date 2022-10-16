@@ -69,12 +69,13 @@ formBook.addEventListener('submit', () => {
         formWrapper.classList.add('hide');
     } else {
         bookItems.push(bookItem);
-        inputTitle.value = '';
-        inputAuthor.value = '';
-        inputYear.value = '';
-        inputIsComplete.checked = false;
     }
-
+    inputBookId.value = '';
+    inputTitle.value = '';
+    inputAuthor.value = '';
+    inputYear.value = '';
+    inputIsComplete.checked = false;
+    
     saveDateToStorage();
     render();
 });
